@@ -23,11 +23,6 @@ body{
 	color: #2f2d2d; height:100%; min-height:100%
 }
 
-img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
 
 
 		@font-face 
@@ -277,7 +272,7 @@ img {
 	font-family: young;
 	margin-top: -15px;
 	display: block;
-	font-size: 17px;
+	font-size: 14px;
 	text-align: left;
 }
 
@@ -498,7 +493,11 @@ img {
 	letter-spacing: 1.5px;
 }
 
-
+.showcase_description
+{
+	display: flex; justify-content: center; align-items: center;
+}
+			
 .showcase_container_800
 {
 	display: none;
@@ -593,5 +592,10 @@ img {
 			#pp_pic1
 			{
 				width: 100%;
+			}
+			
+			.showcase_description
+			{
+				display: none;
 			}
 }
