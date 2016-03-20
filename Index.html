@@ -1,0 +1,166 @@
+<doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="res/css/style.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('a[href^="#"]').on('click',function (e) {
+					e.preventDefault();
+
+					var target = this.hash;
+					var $target = $(target);
+
+					$('html, body').stop().animate({
+						'scrollTop': $target.offset().top
+					}, 900, 'swing', function () {
+						window.location.hash = target;
+					});
+				});
+}			);
+		</script>
+		<script>
+			$(document).scroll(function () 
+			{
+				var y = $(this).scrollTop();
+				if (y > 100) 
+				{
+					$('.topPageAnchorButton').fadeIn();
+				} else 
+				{
+					$('.topPageAnchorButton').fadeOut();
+				}
+			});
+		</script>
+		<title>Product Page</title>
+		<link rel="shortcut icon" href="icon.gif">
+	</head>
+		
+	<body>	
+		<div class="topPageAnchorButton"><a href="#home" rel="" id="anchor0" class="anchorLink" style="float: right; color:#212121; text-decoration: none;">&#9650;</a></div>
+		<a name="home" id="home"></a> 
+		
+		<!-- WEBSITE HEADER -->
+		<div class="header">
+			<div class="header_left">
+				<p style="font-size: 20px; font-family: young; margin-top: 0px;">SOME COMPANY </p>
+			</div>
+			
+			<div class="header_right" style="margin-bottom: -2px;">
+				<table class="header_table">
+					<tr>
+						<td class="header_td"><a href="Index.html" class="header_button_a">PRODUCT PAGE</a></td>
+						<td class="header_td"><a href="PressKit.html" class="header_button_a">PRESS KIT</a></td>
+						<td class="header_td"><a href="AboutUs.html" class="header_button_a">ABOUT US</a></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		
+		<div id="wrapper"> 
+			<div id="content_wrapper"> 
+				<div class="bodycontainer"  align="center">
+					<center>
+					
+						<!-- PAGE HEADER -->
+						<div class="header_bg" style="background-image: url('res/imgs/productpage_header_bg.png'); background-size: 1920px 612px;">
+							<div class="header_bg_inner_container">
+								<p class="header_title_text" align="center">PRODUCT PAGE</p>
+							</div>
+						</div>
+				
+						<div id="fullwidth" align="center">
+						<div id="width" align="center">
+						<!-- BODY -->
+						<p class="header_caption" align="center" style="margin-bottom: -60px;">
+							This page was <span style="color: #0090D0;">created</span> by Omri Gideoni.&nbsp;
+						</p>
+						
+						<br>
+						
+						<p class="header_caption" align="center" style="font-size: 22px;">
+							He is quite possible the <span  style="color: #0090D0;">best</span> front-end web developer that you should absolutely totally hire.
+							<br>
+							This is another sentence make this paragraph looks more <span  style="color: #0090D0;">detailed</span> and <span style="color: #0090D0;">descriptive</span>.
+							<br>
+							This page layout would be ideal to explain an <span style="color: #0090D0;">idea</span> for a some sort of <span style="color: #0090D0;">modern</span> product.
+						</p>
+				
+						<br>
+							
+						<div style="display: flex; justify-content: center; align-items: center;">
+							<div style="position: relative;">
+								<img src="res/imgs/productpage_graphic_0.png" id="pp_pic1" style="padding-top: 75px;">
+							</div>
+						</div>
+
+						<br><br>
+						<p class="header_caption" align="center" style="font-size: 16px; padding-top: 25px; margin-top: -50px;">
+							This is some subtext explaining the interesting visual above me.
+						</p>
+						
+						<br><br>
+						<div align="center">
+						<div style="max-width: 1200px;">
+							<div class="about_us_text_container">
+								<img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDQ5MCA0OTAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQ5MCA0OTAiIHdpZHRoPSI2NHB4IiBoZWlnaHQ9IjY0cHgiPgogIDxwYXRoIGQ9Ik00NjAuMDgzLDMwMC4wOTh2LTExMC4xYzAtNTAuNTQ4LTE5Ljc2Mi05OC4yMDEtNTUuNjQ2LTEzNC4xODNDMzY4LjU0MiwxOS44MjIsMzIwLjk5NywwLDI3MC41NiwwaC00OS44NjcgIGMtNTAuNDM4LDAtOTcuOTg0LDE5LjgyMS0xMzMuODc4LDU1LjgxM2MtMzUuODgzLDM1Ljk4LTU1LjY0NSw4My42MzUtNTUuNjQ1LDEzNC4xODV2MTA5LjQ2NUMxMi4xODcsMzA4Ljg4MSwwLDMyNC40OTcsMCwzNDIuNDk3ICB2NzUuMDA2YzAsMjkuNDQxLDMyLjYsNTIuNTAzLDc0LjIxNiw1Mi41MDNIODYuNjRWNDc1YzAsOC4yODQsNi43MTYsMTUsMTUsMTVoNTkuODQyYzguMjg0LDAsMTUtNi43MTYsMTUtMTVWMjg1ICBjMC04LjI4NC02LjcxNi0xNS0xNS0xNUgxMDEuNjRjLTguMjg0LDAtMTUsNi43MTYtMTUsMTV2NC45OTRINzQuMjE2Yy00LjQ2MywwLTguODIsMC4yNjUtMTMuMDQ3LDAuNzc0VjE4OS45OTggIEM2MS4xNjksMTAxLjc3NCwxMzIuNzMxLDMwLDIyMC42OTMsMzBoNDkuODY3Yzg3Ljk2MSwwLDE1OS41MjMsNzEuNzc0LDE1OS41MjMsMTU5Ljk5OHYxMDAuOTNjLTQuNjE2LTAuNjEzLTkuMzk1LTAuOTM0LTE0LjMtMC45MzQgIGgtMTEuMTcyVjI4NWMwLTguMjg0LTYuNzE2LTE1LTE1LTE1aC01OS44NDJjLTguMjg0LDAtMTUsNi43MTYtMTUsMTV2MTkwYzAsOC4yODQsNi43MTYsMTUsMTUsMTVoNTkuODQyYzguMjg0LDAsMTUtNi43MTYsMTUtMTUgIHYtNC45OTRoMTEuMTcyYzQxLjYxNywwLDc0LjIxNy0yMy4wNjIsNzQuMjE3LTUyLjUwMnYtNzUuMDA4QzQ5MCwzMjQuODk2LDQ3OC4zNDcsMzA5LjU3NCw0NjAuMDgzLDMwMC4wOTh6IE0xMTYuNjQsMzAwaDI5Ljg0MnYxNjAgIEgxMTYuNjRWMzAweiBNNzQuMjE2LDMxOS45OTRIODYuNjR2MTIwLjAxMkg3NC4yMTZDNDkuMzE1LDQ0MC4wMDYsMzAsNDI3LjkwOSwzMCw0MTcuNTAzdi03NS4wMDYgIEMzMCwzMzIuMDkxLDQ5LjMxNSwzMTkuOTk0LDc0LjIxNiwzMTkuOTk0eiBNMzc0LjYxMSw0NjBoLTI5Ljg0MlYzMDBoMjkuODQyVjQ2MHogTTQ2MCw0MTcuNTA0ICBjMCwxMC40MDYtMTkuMzE1LDIyLjUwMi00NC4yMTcsMjIuNTAyaC0xMS4xNzJWMzE5Ljk5NGgxMS4xNzJjMjQuOTAyLDAsNDQuMjE3LDEyLjA5Niw0NC4yMTcsMjIuNTAyVjQxNy41MDR6IiBmaWxsPSIjMDA5MGQwIi8+Cjwvc3ZnPgo=" />
+								<p class="body_subbox_title">Music</p>
+								<p class="body_subbox_desc">When I work, I occasionaly like listening to music from all types of genres. From Blues, to Glitch Hop, to JRock, I like many different types of music.</p>
+							</div>
+							<div class="about_us_text_container">
+								<img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDQ5MCA0OTAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQ5MCA0OTAiIHdpZHRoPSI2NHB4IiBoZWlnaHQ9IjY0cHgiPgogIDxwYXRoIGQ9Im0yOTQuOTk5LDQwMGgtMjc5Ljk5OWMtOC4yODQsMC0xNSw2LjcxNi0xNSwxNXY2MGMwLDguMjg0IDYuNzE2LDE1IDE1LDE1aDI3OS45OTljOC4yODQsMCAxNS02LjcxNiAxNS0xNXYtNjBjMC04LjI4NC02LjcxNi0xNS0xNS0xNXptLTE1LDYwaC0yNDkuOTk5di0zMGgyNDkuOTk5djMwem0xNjUtNjBoLTQwYy0yNC44MTMsMC00NS4wMDEsMjAuMTg3LTQ1LjAwMSw0NXYzMGMwLDguMjg0IDYuNzE2LDE1IDE1LDE1aDEwMC4wMDJjOC4yODQsMCAxNS02LjcxNiAxNS0xNXYtMzBjMC0yNC44MTMtMjAuMTg3LTQ1LTQ1LjAwMS00NXptMTUuMDAxLDYwaC03MC4wMDJ2LTE1YzAtOC4yNzEgNi43MjktMTUgMTUuMDAxLTE1aDQwYzguMjcxLDAgMTUuMDAxLDYuNzI5IDE1LjAwMSwxNXYxNXptLTQxNS0xNTBoMTg0Ljk5OXYzMC4wMDNoLTk5Ljk5OWMtOC4yODQsMC0xNSw2LjcxNi0xNSwxNXM2LjcxNiwxNSAxNSwxNWgxMTQuNzYxYzAuMDc5LDAuMDAxIDAuMTU5LDAuMDAyIDAuMjM4LDAuMDAyczAuMTU5LTAuMDAxIDAuMjM4LTAuMDAyaDExNC43NjNjOC4yODQsMCAxNS02LjcxNiAxNS0xNXMtNi43MTYtMTUtMTUtMTVoLTEwMC4wMDF2LTMwLjAwM2gxODVjOC4yODQsMCAxNS02LjcxNiAxNS0xNXYtMjgwYzAtOC4yODQtNi43MTYtMTUtMTUtMTVoLTM5OS45OTljLTguMjg0LDAtMTUsNi43MTYtMTUsMTV2MjgwYzAsOC4yODQgNi43MTYsMTUgMTUsMTV6bTE1LTI4MGgzNjkuOTk5djE5MGgtMzY5Ljk5OXYtMTkwem0wLDIyMGgzNjkuOTk5djMwaC0xODUtMTg0Ljk5OXYtMzB6IiBmaWxsPSIjMDA5MGQwIi8+Cjwvc3ZnPgo=" />
+								<p class="body_subbox_title">Computers</p>
+								<p class="body_subbox_desc">I love computers. Technology is an amazing thing that has a lot of things for me to learn, which I'm always eager to know about and understand.</p>
+							</div>
+							<div class="about_us_text_container">
+								<img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDQ5MC4wMDIgNDkwLjAwMiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNDkwLjAwMiA0OTAuMDAyIiB3aWR0aD0iNjRweCIgaGVpZ2h0PSI2NHB4Ij4KICA8cGF0aCBkPSJtMTQ0LjkxNyw2My4zMTdjLTMuMzU0LTUuMDM2LTMuMzU0LTExLjU5NCAwLTE2LjYzbDI2LjY0MS00MGM0LjU5Mi02Ljg5NiAxMy45MDQtOC43NjIgMjAuNzk5LTQuMTY5IDYuODk1LDQuNTkyIDguNzYyLDEzLjkwNCA0LjE2OSwyMC43OTlsLTIxLjEwMywzMS42ODUgMjEuMTAzLDMxLjY4NWM0LjU5Miw2Ljg5NSAyLjcyNiwxNi4yMDctNC4xNjksMjAuNzk5LTIuNTU2LDEuNzAyLTUuNDQ1LDIuNTE3LTguMzAxLDIuNTE3LTQuODUsMC05LjYwOC0yLjM0Ny0xMi40OTgtNi42ODdsLTI2LjY0MS0zOS45OTl6bTEwMC4yMTIsNDBjMi44OSw0LjMzOSA3LjY0OSw2LjY4NiAxMi40OTgsNi42ODYgMi44NTcsMCA1Ljc0Ni0wLjgxNSA4LjMwMi0yLjUxNyA2Ljg5NS00LjU5MyA4Ljc2MS0xMy45MDUgNC4xNjktMjAuOGwtMjEuMTA1LTMxLjY4NSAyMS4xMDUtMzEuNjg1YzQuNTkyLTYuODk1IDIuNzI2LTE2LjIwNy00LjE2OS0yMC44LTYuODk0LTQuNTkxLTE2LjIwNy0yLjcyNi0yMC44LDQuMTY5bC0yNi42NDMsNDBjLTMuMzU0LDUuMDM2LTMuMzU0LDExLjU5NSAwLDE2LjYzMWwyNi42NDMsNDAuMDAxem0tMTMyLjYyLDIxMS42ODVjMS40MjEwOWUtMTQtMjQuODEzIDIwLjE4Ni00NSA0NC45OTktNDVoMTAwYzI0LjgxMywwIDQ0Ljk5OSwyMC4xODcgNDQuOTk5LDQ1IDAsMjQuODEzLTIwLjE4Nyw0NS00NC45OTksNDVoLTEwMGMtMjQuODEzLDAtNDQuOTk5LTIwLjE4Ny00NC45OTktNDV6bTMwLDBjMCw4LjI3MSA2LjcyOCwxNSAxNC45OTksMTVoMTAwYzguMjcxLDAgMTQuOTk5LTYuNzI5IDE0Ljk5OS0xNSAwLTguMjcxLTYuNzI5LTE1LTE0Ljk5OS0xNWgtMTAwYy04LjI3MSwwLTE0Ljk5OSw2LjcyOS0xNC45OTksMTV6bTI5NC45OTItMTA1djIxMGMwLDguMjg0LTYuNzE2LDE1LTE1LDE1aC01OS45ODZjLTAuMDA2LDMwLjMyOC0yNC42ODEsNTUtNTUuMDA5LDU1aC0xOTkuOTk1Yy0zMC4zMzMsMC01NS4wMS0yNC42NzgtNTUuMDEtNTUuMDExdi0yNzkuOTljMC04LjI4NCA2LjcxNi0xNSAxNS0xNWgyODAuMDE0YzguMjg0LDAgMTUsNi43MTYgMTUsMTV2NDBoNTkuOTg2YzguMjg0LDAuMDAxIDE1LDYuNzE3IDE1LDE1LjAwMXptLTEwNC45ODYtNDAuMDAxaC0yNTAuMDE0djI2NC45OWMwLDEzLjc5MSAxMS4yMiwyNS4wMTEgMjUuMDEsMjUuMDExaDE5OS45OTRjMTMuNzksMCAyNS4wMDktMTEuMjIgMjUuMDA5LTI1LjAxMXYtMjY0Ljk5em03NC45ODcsNTUuMDAxaC00NC45ODZ2MTgwaDQ0Ljk4NnYtMTgweiIgZmlsbD0iIzAwOTBkMCIvPgo8L3N2Zz4K" />
+								<p class="body_subbox_title">Coffee</p>
+								<p class="body_subbox_desc">While making this template, I drank a lot of coffee! so I decided to put coffee here. I like my coffee light with lots of cream. Kind of wimpy, but I don't care.</p>
+							</div>
+						</div>
+						<br><br><br>
+						
+						
+					<br>
+					
+						<div style="display: flex; justify-content: center; align-items: center;">
+							<div style="float: left; text-align: left; width: 550px;">
+								<p class="example_header" style="font-size: 28px; color: #212121; padding-bottom: 0px; margin-bottom: 0px;">Here is another</p><br>
+								<p class="example_header" style="color: #0090D0; margin-top: -20px; font-size: 28px; padding-bottom: 5px;">Cool Graphic</p><br>
+								
+								
+														
+								<p class="example_header">It looks like a web of data.</p><br>
+								<p style="font-family: young; margin-top: -15px;  display: block;">Like a bunch of crucial data points create a very cool looking system. I like the way this visual looks a lot.</p><br>
+								
+								<p class="example_header">It's very minimalistic.</p><br>
+								<p style="font-family: young; margin-top: -15px;  display: block;">I love the fact that it's black and white, and that it's shape isn't super complex. It looks very intriguing, but it isn't hard on the eyes, which is good.</p><br>
+								
+								<p class="example_header">It's super duper cool!</p><br>
+								<p style="font-family: young; margin-top: -15px;  display: block;">This visual gives off a very futuristic look. It looks very hip and it gives off a great vibe. (note: hip is not a very hip word)</p><br>
+								
+							</div>
+							
+							<div style="position: relative;">
+								<img src="res/imgs/productpage_graphic_1.png" id="pp_pic0">
+							</div>
+						</div>
+						
+					<br><br>
+					<br><br><br>
+					
+					<div style="display:flex;justify-content:center;align-items:center;">
+						<div style=" border-style: solid; border-width: 2px; padding-right: 40px; padding-left: 40px; position: relative; cursor: pointer; 	border-color: #0090D0;">
+							<p style="font-family: Young; font-size: 48px; display:flex; justify-content:center; align-items:center; margin-top: 5px; margin-bottom: 0px; color: #0090D0;">GET STARTED</p>
+						</div>
+					</div>
+					</div>
+					<br><br><br>
+				</div>
+				</div>
+			</center>
+		</div>
+
+	</div>
+</body>
+</html>

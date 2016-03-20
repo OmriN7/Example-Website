@@ -1,0 +1,245 @@
+<doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="res/css/style.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('a[href^="#"]').on('click',function (e) {
+					e.preventDefault();
+
+					var target = this.hash;
+					var $target = $(target);
+
+					$('html, body').stop().animate({
+						'scrollTop': $target.offset().top
+					}, 900, 'swing', function () {
+						window.location.hash = target;
+					});
+				});
+}			);
+		</script>
+		<script>
+			$(document).scroll(function () 
+			{
+				var y = $(this).scrollTop();
+				if (y > 100) 
+				{
+					$('.topPageAnchorButton').fadeIn();
+				} else 
+				{
+					$('.topPageAnchorButton').fadeOut();
+				}
+			});
+		</script>
+		<title>About Us</title>
+		<link rel="shortcut icon" href="icon.gif">
+		
+		<style>
+			.about_person_name
+			{
+			}
+
+			.about_person_title
+			{
+			}
+
+		</style>
+	</head>
+		
+	<body>	
+	
+		<div class="topPageAnchorButton"><a href="#home" rel="" id="anchor0" class="anchorLink" style="float: right; color:#212121; text-decoration: none;">&#9650;</a></div>
+		<a name="home" id="home"></a> 
+			
+		<!-- WEBSITE HEADER -->
+		<div class="header">
+			<div class="header_left">
+				<p style="font-size: 20px; font-family: young; margin-top: 0px;">SOME COMPANY </p>
+			</div>
+				
+			<div class="header_right" style="margin-bottom: -2px;">
+				<table class="header_table">
+					<tr>
+						<td class="header_td"><a href="Index.html" class="header_button_a">PRODUCT PAGE</a></td>
+						<td class="header_td"><a href="PressKit.html" class="header_button_a">PRESS KIT</a></td>
+						<td class="header_td"><a href="AboutUs.html" class="header_button_a">ABOUT US</a></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		
+		<div id="wrapper"> 
+			<div id="content_wrapper"> 
+				<div class="bodycontainer"  align="center">
+					<center>   
+						<!-- HEADER -->
+						<div class="header_bg" style="background-image: url('res/imgs/aboutus_header_bg.png'); background-size: 1871px 600px;">
+							<div class="header_bg_inner_container">
+								<p class="header_title_text" align="center">ABOUT US</p><br>
+							</div>
+						</div>
+			
+						<br>
+						<br>
+							
+						<div id="fullwidth" align="center">
+							<div id="width" align="center" style="max-width: 850px;">
+								<p class="header_caption" align="center" style="margin-bottom: -60px; color: #0090D0;">
+									We're a great team.
+								</p>
+								<br>
+								<p class="header_caption" align="center" style="font-size: 22px;">
+									Composed of only the best people that have ever existed. We like to take long walks on the beach and stuff. During actual work time we program stuff, design stuff and build stuff. We all love computers. I literally have no idea who'se a part of this team but I can assure you, it's a pretty cool one. 
+								</p>
+							</div>
+						</div>
+							
+						<div class="showcase_container">
+							<div style=" height: 100%;">
+								<img src="res/imgs/man-notebook-notes-macbook.jpg" style="width: 100%; height: 100%;"/>
+							</div>
+							<div style="display:flex;align-items:center;  height: 100%;">
+								<div style="display:flex;justify-content:flex-end;align-items:center; text-align: left; padding-right: 50px; padding-left: 50px;  height: 100%;">
+									<div>
+										<p class="section_secondary_header"style=" color: #0090D0;">
+											Lorem Ipsum
+										</p>
+										<br>
+										<p class="section_paragraph">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla efficitur orci, quis viverra massa aliquet sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin sem erat, fringilla sed sem at, rutrum feugiat mauris. Ut convallis a nisl a tempus. Nulla facilisi. Duis ac magna ligula. Phasellus in sagittis augue. Vestibulum sit amet sapien justo. Fusce venenatis consequat consectetur. 
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+			
+						<br>
+						<br>
+			
+						<div class="showcase_container">
+							<div style="display:flex;align-items:center;  height: 100%;">
+							
+								<div style="display:flex;justify-content:flex-end;align-items:center; text-align: left; padding-right: 50px; padding-left: 50px;  height: 100%;">
+									<div>
+										<p class="section_secondary_header"style=" color: #0090D0;">
+											Lorem Ipsum
+										</p>
+										<br>
+										<p class="section_paragraph">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla efficitur orci, quis viverra massa aliquet sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin sem erat, fringilla sed sem at, rutrum feugiat mauris. Ut convallis a nisl a tempus. Nulla facilisi. Duis ac magna ligula. Phasellus in sagittis augue. Vestibulum sit amet sapien justo. Fusce venenatis consequat consectetur. 
+										</p>
+									</div>
+								</div>
+								
+								<div style=" height: 100%;">
+									<img src="res/imgs/man-notebook-notes-macbook.jpg" style="width: 100%; height: 100%;"/>
+								</div>
+							</div>
+						</div>
+			
+						<div class="showcase_container_800">
+							<img src="res/imgs/man-notebook-notes-macbook.jpg" style="width: 100%"/>
+							
+							<div id="width" align="center">
+								<p class="header_caption" align="center" style="margin-bottom: -60px; color: #0090D0;">
+									Lorem Ipsum 
+								</p>
+								<br>
+								<p class="header_caption" align="center" style="font-size: 22px;">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla efficitur orci, quis viverra massa aliquet sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin sem erat, fringilla sed sem at, rutrum feugiat mauris. Ut convallis a nisl a tempus. Nulla facilisi. Duis ac magna ligula. Phasellus in sagittis augue. Vestibulum sit amet sapien justo. Fusce venenatis consequat consectetur. 
+								</p>
+							</div>
+						</div>
+						
+						<div class="showcase_container_800">
+							<img src="res/imgs/man-notebook-notes-macbook.jpg" style="width: 100%"/>
+							
+							<div id="width" align="center">
+								<p class="header_caption" align="center" style="margin-bottom: -60px; color: #0090D0;">
+									Lorem Ipsum 
+								</p>
+								<br>
+								<p class="header_caption" align="center" style="font-size: 22px;">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla efficitur orci, quis viverra massa aliquet sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin sem erat, fringilla sed sem at, rutrum feugiat mauris. Ut convallis a nisl a tempus. Nulla facilisi. Duis ac magna ligula. Phasellus in sagittis augue. Vestibulum sit amet sapien justo. Fusce venenatis consequat consectetur. 
+								</p>
+							</div>
+						</div>
+						
+						<br>
+			
+						<div id="fullwidth" align="center">
+							<div class="partners_container" id="width" align="center">
+								<p class="header_caption" align="center" style="color: #0090D0; margin-bottom: 0px">
+									Our Partners
+								</p>
+								
+								<br>
+								<br>
+							
+								<div style="display: inline-flex; width: 100%; max-width: 900px;">
+									<div style="width: 30%;">
+										<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Bungie_Logo_-_Official.svg/2000px-Bungie_Logo_-_Official.svg.png" style="margin-top: -10px;"/>
+									</div>
+									<div style="width: 30%; padding: 6%">
+										<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Valve_logo.svg/2000px-Valve_logo.svg.png"/>
+									</div>
+									<div style="width: 30%;">
+									<img src="http://vignette1.wikia.nocookie.net/megamitensei/images/d/d8/AtlusLogo.png/revision/latest?cb=20131003231005" style="margin-top: 10px;"/>
+									</div>
+								</div>
+							</div>
+							<div class="showcase_container_800">
+								<p class="header_caption" align="center" style="color: #0090D0; margin-bottom: 0px">
+									Our Partners
+								</p>
+								
+								<div>
+									<div>
+										<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Bungie_Logo_-_Official.svg/2000px-Bungie_Logo_-_Official.svg.png" style="width: 65%; padding-top: 40px; padding-bottom: 40px;"/>
+									</div>
+									<div>
+										<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Valve_logo.svg/2000px-Valve_logo.svg.png" style="width: 65%; padding-top: 40px; padding-bottom: 40px;"/>
+									</div>
+									<div>
+										<img src="http://vignette1.wikia.nocookie.net/megamitensei/images/d/d8/AtlusLogo.png/revision/latest?cb=20131003231005" style="width: 65%; padding-top: 40px; padding-bottom: 40px;"/>
+									</div>
+								</div>
+							</div>
+				
+							<div class="founders_container" style="width: 90%; max-width: 750px;">
+								<p class="header_caption" align="center" style="color: #0090D0;">
+									Founders
+								</p>
+								
+								<div class="about_us_text_container" style="width: 30%; padding-bottom: 30px; padding: 1%;">
+									<img src="res/imgs/slash_profpic.png" style="width: 100%;"/>
+									<div class="colpal_name" style="width: 100%; background: #EDEDED;">Slash</div>
+									<div class="colpal_name" style="width: 100%; background: #CCCCCC;">CEO</div>
+								</div>
+								
+								<div class="about_us_text_container" style="width: 30%; padding-bottom: 30px; padding: 1%;">
+									<img src="res/imgs/johnlennon_profpic.png" style="width: 100%;"/>
+									<div class="colpal_name" style="width: 100%; background: #EDEDED;">John Lennon</div>
+									<div class="colpal_name" style="width: 100%; background: #CCCCCC;">CTO</div>
+								</div>
+								
+								<div class="about_us_text_container" style="width: 30%; padding-bottom: 30px; padding: 1%;">
+									<img src="res/imgs/mickjagger_profpic.png" style="width: 100%;"/>
+									<div class="colpal_name" style="width: 100%; background: #EDEDED;">Mick Jagger</div>
+									<div class="colpal_name" style="width: 100%; background: #CCCCCC;">Intern</div>
+								</div>
+							</div>
+				
+							<br>
+							<br>
+							<br>
+							<br>
+				
+						</div>
+					</center>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
