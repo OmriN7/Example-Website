@@ -31,7 +31,14 @@ body{
 			src: 	url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'), 
 					url('../fonts/OpenSans-Light.ttf')  format('truetype'); /* Safari, Android, iOS */
 		}
-
+		
+		@font-face 
+		{
+			font-family: 'young';
+			src: 	url('../fonts/Young.eot?#iefix') format('embedded-opentype'), 
+					url('../fonts/Young.ttf')  format('truetype'); /* Safari, Android, iOS */
+		}
+		
 .bodycontainer { display:block; width:100%; height:100%;  }
 #header { display:table-row; height:50px; background-color:red; }
 #fullwidth { display:table-row; background-color:white;display: block;}
@@ -226,7 +233,42 @@ body{
 	transition:  0.3s;
 }
 
-
+.product_button_container
+					{
+						border-style: solid;
+						border-width: 2px;
+						padding-right: 40px;
+						padding-left: 40px;
+						position: relative;
+						cursor: pointer;
+						border-color: #0090D0;
+						color: #0090D0;
+						-webkit-transition:  0.3s; /* Safari */
+						transition:  0.3s;
+						border-radius: 50px;
+					}
+					
+					.product_button_container:hover
+					{
+						border-color: transparent;
+						color: white;
+						background: #0090D0;
+						-webkit-transition:  0.3s; /* Safari */
+						transition:  0.3s;
+					}
+					
+					.product_button
+					{
+						font-family: Young;
+						font-size: 48px;
+						display:flex;
+						justify-content:center;
+						align-items:center;
+						margin-top: 5px;
+						margin-bottom: 0px;
+					}
+					
+					
 .small_button:hover
 {
 	background: #0E5F8E;
@@ -598,4 +640,5 @@ body{
 			{
 				display: none;
 			}
+			
 }
