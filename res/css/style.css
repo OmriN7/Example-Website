@@ -64,7 +64,7 @@ body{
 		{
 			text-decoration: none;
 			color: #2293D6;
-			padding: 10% 20%;
+			padding: 10% 6%;
 		}
 		.header_right
 		{
@@ -102,6 +102,29 @@ body{
 			-webkit-transition:  0.25s; /* Safari */
 			transition:  0.25s;
 		}
+		
+		.header_resume_button_td
+		{
+			text-decoration: none;
+			border-bottom: 0px solid #F75B75;
+			-webkit-transition:  0.15s; /* Safari */
+			transition:  0.15s;
+			font-size: 13px;
+			height: 50px;
+			text-align: center;
+			color: #93CFE5;
+			width: 100px;
+			cursor: pointer;
+		}
+		
+		.header_resume_button_td:hover
+		{
+			text-decoration: none;
+			border-bottom: 8px solid #F75B75;
+			-webkit-transition:  0.25s; /* Safari */
+			transition:  0.25s;
+		}
+		
 	
 #pp_pic0
 {
@@ -115,10 +138,11 @@ body{
 	padding-top: 15px;
 	border-right: 0px solid #D8D8D8;
 	background: white;
-	width: 33%;
+	width: 31%;
 	display: inline-table;
 	height: 0px;
 	text-align: center;
+	padding: 1%;
 }
 
 .body_subbox_title
@@ -309,14 +333,6 @@ body{
 	text-align: left;
 }
 
-.section_paragraph
-{
-	font-family: young;
-	margin-top: -15px;
-	display: block;
-	font-size: 14px;
-	text-align: left;
-}
 
 
 .about_person_picture
@@ -368,17 +384,6 @@ body{
 	margin-right: 5px;
 	cursor: pointer; 	
 	
-}
-
-.about_us_text_container
-{
-	padding-top: 15px;
-	border-right: 0px solid #D8D8D8;
-	background: white;
-	width: 33%;
-	display: inline-table;
-	height: 0px;
-	text-align: center;
 }
 
 .body_subbox_title
@@ -485,10 +490,11 @@ body{
 
 .section_paragraph
 {
-	font-family: young;
+	font-family: OpenSans;
 	margin-top: -15px;
 	display: block;
-	font-size: 17px;
+	font-size: 100%;
+	text-align: left;
 }
 
 .section_container
@@ -589,10 +595,6 @@ body{
 				width: 350px;
 			}
 			
-			.header_td
-			{
-				width: 45px;
-			}
 			.header_left
 			{
 				padding-left: 15px;
