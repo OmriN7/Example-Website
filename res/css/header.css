@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Document */
+
+.header 
+{
+	height: 50px;
+	width: 100%;
+	
+	margin:0px auto;
+	display:inline-flex;
+	align-items: center;
+	
+	background: white;
+}
+		
+.header_left
+{	
+	padding-left: 35px;
+	width: 170px;
+}
+
+.comapny_name
+{
+	font-size: 20px;
+}
+		
+.header_right
+{
+	display: flex;
+	margin-left: auto;
+	height: 100%;
+	
+	font-family: OpenSans;
+	font-size: 13px;
+	color: #93CFE5;
+	
+	margin-bottom: -2px;
+	padding-right: 10px;
+	
+}
+		
+.header_button_a
+{
+
+	height: 50px;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	color: #2293D6;
+	margin-top: auto;
+}
+		
+.header_button
+{
+	border-bottom: 0px solid #66D9EF;
+	-webkit-transition:  0.15s; /* Safari */
+	transition:  0.15s;
+	font-size: 13px;
+	text-align: center;
+	color: #2293D6;
+	width: 125px;
+	height: 100%;
+			
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	cursor: pointer;
+}
+
+.header_button:hover
+{
+	border-bottom: 8px solid #66D9EF;
+	height: 80%;
+}
+		
+#header_resume_button
+{
+	color: #FF1B5B;
+	border-bottom: 0px solid #FF1B5B;
+}
+		
+#header_resume_button:hover
+{
+	border-bottom: 8px solid #FF1B5B;
+}

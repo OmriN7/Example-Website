@@ -1,169 +1,125 @@
 <doctype html>
 <html>
 	<head>
-		<link rel="stylesheet" href="res/css/style.css"/>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-		<script>
-			$(document).ready(function(){
-				$('a[href^="#"]').on('click',function (e) {
-					e.preventDefault();
-
-					var target = this.hash;
-					var $target = $(target);
-
-					$('html, body').stop().animate({
-						'scrollTop': $target.offset().top
-					}, 900, 'swing', function () {
-						window.location.hash = target;
-					});
-				});
-}			);
-		</script>
-		<script>
-			$(document).scroll(function () 
-			{
-				var y = $(this).scrollTop();
-				if (y > 100) 
-				{
-					$('.topPageAnchorButton').fadeIn();
-				} else 
-				{
-					$('.topPageAnchorButton').fadeOut();
-				}
-			});
-		</script>
+		<!-- STYLE SHEETS -->
+		<link type="text/css" rel="stylesheet" href="/res/css/style.css"/>
+		<link type="text/css" rel="stylesheet" href="/res/css/fonts.css"/>
+		<link type="text/css" rel="stylesheet" href="/res/css/layout.css"/>
+		<link type="text/css" rel="stylesheet" href="/res/css/typography.css"/>
+		<link type="text/css" rel="stylesheet" href="/res/css/buttons.css"/>
+		
+		<link type="text/css" rel="stylesheet" href="/res/css/product_page.css"/>
+		
+		<!-- JAVASCRIPT LIBRARIES-->
+		<script  type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script  type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		
+		<!-- JAVASCRIPT SCRIPTS -->
+		<script  type="text/javascript" src="/res/js/smooth_scrolling.js"></script>
+		<script  type="text/javascript" src="/res/js/top_page_anchor_fade.js"></script>
+		<script  type="text/javascript" src="/res/js/go_away_message.js"></script>
+		
 		<title>Product Page</title>
+		
+		<!--
 		<link rel="shortcut icon" href="icon.gif">
+		-->
 	</head>
 		
-	<body>	
-		<div class="topPageAnchorButton"><a href="#home" rel="" id="anchor0" class="anchorLink" style="float: right; color:#212121; text-decoration: none;">&#9650;</a></div>
-		<a name="home" id="home"></a> 
+	<body ng-app="">
+	
+
+		<!-- TOP PAGE ANCHOR -->
+		<a name="top" id="top"></a> 
+		<div class="topPageAnchorButton"><a href="#top" rel="" id="top_page_anchor">&#9650;</a></div>		
+		
 		
 		<!-- WEBSITE HEADER -->
-		<div class="header">
-			<div class="header_left">
-				<a href="index.html" style="color: black; text-decoration: none;"><p style="font-size: 20px; font-family: young; margin-top: 0px;">SOME COMPANY</p></a>
-			</div>
-			
-			<div class="header_right" style="margin-bottom: -2px;">
-				<table class="header_table">
-					<tr>
-						<td class="header_td"><a href="index.html" class="header_button_a">&nbsp;&nbsp;&nbsp;&nbsp;PRODUCT&nbsp;&nbsp;&nbsp;&nbsp;</a></td>
-						<td class="header_td"><a href="PressKit.html" class="header_button_a">&nbsp;&nbsp;&nbsp;&nbsp;PRESS KIT&nbsp;&nbsp;&nbsp;&nbsp;</a></td>
-						<td class="header_td"><a href="AboutUs.html" class="header_button_a">&nbsp;&nbsp;&nbsp;&nbsp;ABOUT US&nbsp;&nbsp;&nbsp;&nbsp;</a></td>
-						<td class="header_resume_button_td"><a href="http://omrin7.github.io/" class="header_button_a" id="resume_header_"style="color: #FF1B5B">RESUME WEBSITE</a></td>
-					</tr>
-				</table>
-			</div>
+		<div ng-include="'/res/components/header.html'"></div>
+		
+		
+		<!-- PAGE HEADER -->
+		<div class="page_header" id="product_page">
+			<div class="page_header_header">PRODUCT</div>
 		</div>
 		
-		<div id="wrapper"> 
-			<div id="content_wrapper"> 
-				<div class="bodycontainer"  align="center">
-					<center>
+		
+		<!-- PAGE BODY -->
+		<div class="page_body center_block">
+			<div>
+				<h2>
+					This page was <span class="text_plain_blue">created</span> by Omri Gideoni.
+				</h2>
+				
+				<h5>
+					He is an <span class="text_plain_blue">upcoming</span> front-end web developer that you should absolutely totally hire. <br>
+					This is another sentence make this paragraph looks more <span class="text_plain_blue">detailed</span> and <span class="text_plain_blue">descriptive</span>. <br>
+					This page layout would be ideal to explain an <span class="text_plain_blue">idea</span> for a some sort of <span class="text_plain_blue">modern</span> product.
+				</h5>
+			</div>
 					
-						<!-- PAGE HEADER -->
-						<div class="header_bg" style="background-image: url('res/imgs/productpage_header_bg.jpg'); background-size: 1920px 612px;">
-							<div class="header_bg_inner_container">
-								<p class="header_title_text" align="center">PRODUCT</p>
-							</div>
-						</div>
-				
-						<div id="fullwidth" align="center">
-						<div id="width" align="center">
-						<!-- BODY -->
-						<p class="header_caption" align="center" style="margin-bottom: -60px;">
-							This page was <span style="color: #0090D0;">created</span> by Omri Gideoni.&nbsp;
-						</p>
-						
-						<br>
-						
-						<p class="header_caption" align="center" style="font-size: 22px;">
-							He is quite possible the <span  style="color: #0090D0;">best</span> front-end web developer that you should absolutely totally hire.
-							<br>
-							This is another sentence make this paragraph looks more <span  style="color: #0090D0;">detailed</span> and <span style="color: #0090D0;">descriptive</span>.
-							<br>
-							This page layout would be ideal to explain an <span style="color: #0090D0;">idea</span> for a some sort of <span style="color: #0090D0;">modern</span> product.
-						</p>
-				
-						<br>
-							
-						<div style="display: flex; justify-content: center; align-items: center;">
-							<div style="position: relative;">
-								<img src="res/imgs/productpage_graphic_0.png" id="pp_pic1" style="padding-top: 75px;">
-							</div>
-						</div>
+			<div id="productpage_featured_pic0">
+				<div>
+					<img src="/res/imgs/productpage_graphic_0.png" >
+				</div>
 
-						<br><br>
-						<p class="header_caption" align="center" style="font-size: 16px; padding-top: 25px; margin-top: -50px;">
-							This is some subtext explaining the interesting visual above me.
-						</p>
-						
-						<br><br>
-						<div align="center">
-						<div style="max-width: 1200px;">
-							<div class="about_us_text_container">
-								<img src="res/imgs/productpage_technology.png">
-								<p class="body_subbox_title">Music</p>
-								<p class="body_subbox_desc">When I work, I occasionaly like listening to music from all types of genres. From Blues, to Glitch Hop, to JRock, I like many different types of music.</p>
-							</div>
-							<div class="about_us_text_container">
-								<img src="res/imgs/productpage_computer.png">
-								<p class="body_subbox_title">Computers</p>
-								<p class="body_subbox_desc">I love computers. Technology is an amazing thing that has a lot of things for me to learn, which I'm always eager to know about and understand.</p>
-							</div>
-							<div class="about_us_text_container">
-								<img src="res/imgs/productpage_cup.png">
-								<p class="body_subbox_title">Coffee</p>
-								<p class="body_subbox_desc">While making this template, I drank a lot of coffee! so I decided to put coffee here. I like my coffee light with lots of cream. Kind of wimpy, but I don't care.</p>
-							</div>
-						</div>
-						<br><br><br>
-						
-						
-					<br>
+				<p>
+					This is some subtext explaining the inte/resting visual above me.
+				</p>
+			</div>
+			
+			<div class="c3_wrapper superlarge_width">
+				<div class="c3_segment">
+					<img src="/res/imgs/productpage_technology.png"/>
+					<h3 class="c3_header text_plain_blue">Music</h3>
+					<p class="c3_desc">When I work, I occasionaly like listening to music from all types of gen/res. From Blues, to Glitch Hop, to JRock, I like many different types of music.</p>
+				</div>
+				<div class="c3_segment">
+					<img src="/res/imgs/productpage_computer.png"/>
+					<h3 class="c3_header text_plain_blue">Computers</h3>
+					<p class="c3_desc">I love computers. Technology is an amazing thing that has a lot of things for me to learn, which I'm always eager to know about and understand.</p>
+				</div>
+				<div class="c3_segment">
+					<img src="/res/imgs/productpage_cup.png"/>
+					<h3 class="c3_header text_plain_blue">Coffee</h3>
+					<p class="c3_desc">While making this template, I drank a lot of coffee! so I decided to put coffee here. I like my coffee light with lots of cream. Kind of wimpy, but I don't care.</p>
+				</div>
+			</div>
+				
+			<div class="image_showcase center">
+				<div class="image_showcase_left">
+					<div class="image_showcase_header">
+						<h3 class="no_margin">Here is another</h3>
+						<h3 class="no_margin text_plain_blue">Cool Graphic</h3>
+					</div>
 					
-						<div style="display: flex; justify-content: center; align-items: center;">
-							<div style="float: left; text-align: left; width: 550px;">
-								<p class="example_header" style="font-size: 28px; color: #212121; padding-bottom: 0px; margin-bottom: 0px;">Here is another</p><br>
-								<p class="example_header" style="color: #0090D0; margin-top: -20px; font-size: 28px; padding-bottom: 5px;">Cool Graphic</p><br>
+					<div class="image_showcase_desc_section">
+						<span class="text_plain_blue">It looks like a web of data.</span>
+						<p>Like a bunch of crucial data points create a very cool looking system. I like the way this visual looks a lot.</p>
+					</div>
 								
-								
-														
-								<p class="example_header">It looks like a web of data.</p><br>
-								<p style="font-family: young; margin-top: -15px;  display: block;">Like a bunch of crucial data points create a very cool looking system. I like the way this visual looks a lot.</p><br>
-								
-								<p class="example_header">It's very minimalistic.</p><br>
-								<p style="font-family: young; margin-top: -15px;  display: block;">I love the fact that it's black and white, and that it's shape isn't super complex. It looks very intriguing, but it isn't hard on the eyes, which is good.</p><br>
-								
-								<p class="example_header">It's super duper cool!</p><br>
-								<p style="font-family: young; margin-top: -15px;  display: block;">This visual gives off a very futuristic look. It looks very hip and it gives off a great vibe. (note: hip is not a very hip word)</p><br>
-								
-							</div>
+					<div class="image_showcase_desc_section">
+						<span class="text_plain_blue">It's very minimalistic.</span>
+						<p>I love the fact that it's black and white, and that it's shape isn't super complex. It looks very intriguing, but it isn't hard on the eyes, which is good.</p>
+					</div>		
+
+					
+					<div class="image_showcase_desc_section">
+						<span class="text_plain_blue">It's super duper cool!</span>
+						<p>This visual gives off a very futuristic look. It looks very hip and it gives off a great vibe. (note: hip is not a very hip word)</p>
+					</div>
+				</div>
 							
-							<div style="position: relative;">
-								<img src="res/imgs/productpage_graphic_1.png" id="pp_pic0">
-							</div>
-						</div>
-						
-					<br><br>
-					<br><br><br>
-					
-					
-					
-					<div style="display:flex;justify-content:center;align-items:center;">
-						<div class="product_button_container">
-							<p class="product_button">GET STARTED</p>
-						</div>
-					</div>
-					</div>
-					<br><br><br>
+				<div>
+					<img src="/res/imgs/productpage_graphic_1.png" class="image_showcase_image">
 				</div>
-				</div>
-			</center>
+			</div>
+					
+			<div class="large_button_container" onClick="GoAwayMessage()">
+				<p class="large_button">GET STARTED</p>
+			</div>
+
+
 		</div>
-
-	</div>
-</body>
+	</body>
 </html>
