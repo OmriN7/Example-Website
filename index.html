@@ -8,7 +8,12 @@
 		<link type="text/css" rel="stylesheet" href="/Example-Website/res/css/typography.css"/>
 		<link type="text/css" rel="stylesheet" href="/Example-Website/res/css/buttons.css"/>
 		
-		<link type="text/css" rel="stylesheet" href="/Example-Website/res/css/product_page.css"/>
+		<link rel="stylesheet" href="/Example-Website/res/css/components/header.css"/>
+		
+		<link type="text/css" rel="stylesheet" href="/Example-Website/res/css/pages/product_page.css"/>
+		
+		<link type="text/css" rel="stylesheet" href="/Example-Website/res/css/responsive_design.css"/>
+		
 		
 		<!-- JAVASCRIPT LIBRARIES-->
 		<script  type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -18,6 +23,11 @@
 		<script  type="text/javascript" src="/Example-Website/res/js/smooth_scrolling.js"></script>
 		<script  type="text/javascript" src="/Example-Website/res/js/top_page_anchor_fade.js"></script>
 		<script  type="text/javascript" src="/Example-Website/res/js/go_away_message.js"></script>
+		
+		
+		<!-- MOBILE VIEWPORT -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
 		
 		<title>Product Page</title>
 		
@@ -39,14 +49,16 @@
 		
 		
 		<!-- PAGE HEADER -->
-		<div class="page_header" id="product_page">
-			<div class="page_header_header">PRODUCT</div>
+		<div class="center page_header" id="product_page">
+			<h1 class="page_header_header center_block">PRODUCT</h1>
 		</div>
 		
+		<div id="product_page">
+		</div>
 		
 		<!-- PAGE BODY -->
 		<div class="page_body center_block">
-			<div>
+			<div class="padding_wrapper">
 				<h2>
 					This page was <span class="text_plain_blue">created</span> by Omri Gideoni.
 				</h2>
@@ -58,9 +70,9 @@
 				</h5>
 			</div>
 					
-			<div id="productpage_featured_pic0">
+			<div class="padding_wrapper" id="productpage_featured_pic0">
 				<div>
-					<img src="/Example-Website/res/imgs/productpage_graphic_0.png" >
+					<img src="/Example-Website/res/imgs/productpage_graphic_0.png" class="c_image mediumsmall_width">
 				</div>
 
 				<p>
@@ -68,55 +80,57 @@
 				</p>
 			</div>
 			
-			<div class="c3_wrapper superlarge_width">
-				<div class="c3_segment">
+			<div class="padding_wrapper c3_wrapper superlarge_width c3_wrapper_foldable">
+				<div class="c3_segment c3_segment_foldable">
 					<img src="/Example-Website/res/imgs/productpage_technology.png"/>
 					<h3 class="c3_header text_plain_blue">Music</h3>
 					<p class="c3_desc">When I work, I occasionaly like listening to music from all types of genres. From Blues, to Glitch Hop, to JRock, I like many different types of music.</p>
 				</div>
-				<div class="c3_segment">
+				<div class="c3_segment c3_segment_foldable">
 					<img src="/Example-Website/res/imgs/productpage_computer.png"/>
 					<h3 class="c3_header text_plain_blue">Computers</h3>
 					<p class="c3_desc">I love computers. Technology is an amazing thing that has a lot of things for me to learn, which I'm always eager to know about and understand.</p>
 				</div>
-				<div class="c3_segment">
+				<div class="c3_segment c3_segment_foldable">
 					<img src="/Example-Website/res/imgs/productpage_cup.png"/>
 					<h3 class="c3_header text_plain_blue">Coffee</h3>
 					<p class="c3_desc">While making this template, I drank a lot of coffee! so I decided to put coffee here. I like my coffee light with lots of cream. Kind of wimpy, but I don't care.</p>
 				</div>
 			</div>
-				
-			<div class="image_showcase center">
-				<div class="image_showcase_left">
-					<div class="image_showcase_header">
-						<h3 class="no_margin">Here is another</h3>
-						<h3 class="no_margin text_plain_blue">Cool Graphic</h3>
-					</div>
-					
-					<div class="image_showcase_desc_section">
-						<span class="text_plain_blue">It looks like a web of data.</span>
-						<p>Like a bunch of crucial data points create a very cool looking system. I like the way this visual looks a lot.</p>
-					</div>
-								
-					<div class="image_showcase_desc_section">
-						<span class="text_plain_blue">It's very minimalistic.</span>
-						<p>I love the fact that it's black and white, and that it's shape isn't super complex. It looks very intriguing, but it isn't hard on the eyes, which is good.</p>
-					</div>		
+			
+			<div class="c2_wrapper center large_width">
+				<div class="c2_segment">
+					<div class="small_wdith c2_text_container_right">
+						<div class="image_showcase_header">
+							<h3 class="no_margin">Here is another</h3>
+							<h3 class="no_margin text_plain_blue">Cool Graphic</h3>
+						</div>
+						
+						<div class="image_showcase_desc_section">
+							<span class="text_plain_blue">It looks like a web of data.</span>
+							<p>Like a bunch of crucial data points create a very cool looking system. I like the way this visual looks a lot.</p>
+						</div>
+									
+						<div class="image_showcase_desc_section">
+							<span class="text_plain_blue">It's very minimalistic.</span>
+							<p>I love the fact that it's black and white, and that it's shape isn't super complex. It looks very intriguing, but it isn't hard on the eyes, which is good.</p>
+						</div>		
 
-					
-					<div class="image_showcase_desc_section">
-						<span class="text_plain_blue">It's super duper cool!</span>
-						<p>This visual gives off a very futuristic look. It looks very hip and it gives off a great vibe. (note: hip is not a very hip word)</p>
+						
+						<div class="image_showcase_desc_section">
+							<span class="text_plain_blue">It's super duper cool!</span>
+							<p>This visual gives off a very futuristic look. It looks very hip and it gives off a great vibe. (note: hip is not a very hip word)</p>
+						</div>
 					</div>
 				</div>
-							
-				<div>
-					<img src="/Example-Website/res/imgs/productpage_graphic_1.png" class="image_showcase_image">
+				<div class="c2_segment">
+					<img src="/Example-Website/res/imgs/productpage_graphic_1.png" class="c_image">
 				</div>
 			</div>
-					
+			
+			
 			<div class="large_button_container" onClick="GoAwayMessage()">
-				<p class="large_button">GET STARTED</p>
+				<p class="large_button center_block">GET STARTED</p>
 			</div>
 
 

@@ -1,3 +1,9 @@
+.partners_image
+{
+	padding: 10px 0;
+}
+
+
 #about_us.page_header 
 {
 	background-image: url('/Example-Website/res/imgs/aboutus_header_bg.jpg');

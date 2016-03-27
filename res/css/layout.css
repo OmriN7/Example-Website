@@ -29,20 +29,14 @@ body
 	height:600px;
 	
 	background-size: 100% auto;
-	background-position: 0px -150px;
+	background-position: 0 -150px;
 	background-position: center center;
 	
-	font-size:64px;
 	letter-spacing: 4px;
-	display: flex;
-	
-	justify-content: center;
-	align-items: center;
 	height: 600px;
 	
 	margin-bottom: 60px;
 	
-	z-index = 1;
 }
 
 .page_body 
@@ -52,21 +46,29 @@ body
 	padding-bottom: 100px;
 }
 
+.padding_wrapper
+{
+	padding: 0 2.5%;
+}
 
 /* ALINGMENTS
 //////////////////////////////////////////////*/
 .center,
-.center_stack,
+.center_block,
 .c3_wrapper,
 .c2_wrapper 
 {
 	display: flex;
+	display: -webkit-inline-flex;
+	 
 	justify-content: center;
 	align-items: center;
-	margin: auto;
+	
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.center_stack
+.center_block
 {
 	display: block;
 }
@@ -110,9 +112,19 @@ body
 	.c3_segment
 	{
 		padding:1.5%;
-		width: 30%;
+		width: 33%;
 	}
 
+	.c3_segment:first-child
+	{
+		padding-left: 0px;
+	}
+
+
+	.c3_segment:last-child
+	{
+		padding-right: 0px;
+	}
 
 
 /* image_showcase DIV
@@ -139,10 +151,6 @@ body
 	text-align: left;
 	width: 550px;
 }
-.image_showcase_image
-{
-	padding-left: 50px;
-}
 
 /* summary DIV
 //////////////////////////////////////////////*/
@@ -151,7 +159,7 @@ body
 	letter-spacing: 1px;
 	font-size: 14px;
 	text-align: left;
-	min-width: 200px;
+	min-width: 160px;
 	padding-right: 30px;
 }
 
@@ -159,9 +167,6 @@ body
 {
 	display: inline-flex;
 	text-align: left;
-	max-width: 1000px;
-	padding: 0 50px;
-	margin-bottom: -10px;
 }
 
 .fact_container
@@ -192,11 +197,12 @@ body
 .showcase_description
 {
 	padding-bottom: 25px;
-	 max-width: 1000px;
-	 padding-right: 50px;
-	 padding-left: 50px;
 }
 
+.showcae_text
+{
+	width: 60%;
+}
 
 .showcase_image
 {

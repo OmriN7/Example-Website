@@ -8,7 +8,11 @@
 		<link type="text/css" rel="stylesheet" href="/Example-Website/res/css/typography.css"/>
 		<link type="text/css" rel="stylesheet" href="/Example-Website/res/css/buttons.css"/>
 		
-		<link type="text/css" rel="stylesheet" href="/Example-Website/res/css/press_kit.css"/>
+		<link rel="stylesheet" href="/Example-Website/res/css/components/header.css"/>
+		
+		<link type="text/css" rel="stylesheet" href="/Example-Website/res/css/pages/press_kit.css"/>
+		
+		<link type="text/css" rel="stylesheet" href="/Example-Website/res/css/responsive_design.css"/>
 		
 		<!-- JAVASCRIPT LIBRARIES-->
 		<script  type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -18,6 +22,9 @@
 		<script  type="text/javascript" src="/Example-Website/res/js/smooth_scrolling.js"></script>
 		<script  type="text/javascript" src="/Example-Website/res/js/top_page_anchor_fade.js"></script>
 		<script  type="text/javascript" src="/Example-Website/res/js/go_away_message.js"></script>
+		
+		<!-- MOBILE VIEWPORT -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<title>Press Kit</title>
 		
@@ -40,14 +47,13 @@
 		
 		
 		<!-- PAGE HEADER -->
-		<div class="page_header" id="press_kit">
-			<div class="page_header_header">PRESS KIT</div>
+		<div class="page_header center" id="press_kit">
+			<h1 class="page_header_header center_block">PRESS KIT</h1>
 		</div>
-		
 		
 		<!-- PAGE BODY -->
 		<div class="page_body center_block">
-			<div class="summary_container">
+			<div class="summary_container padding_wrapper large_width">
 				<div class="summary_facts">
 					
 					<p class="fact_container">
@@ -70,7 +76,7 @@
 					</p>
 							
 					<p class="fact_container">
-						<span class="text_plain_blue">Press / Business contact:</span><br>
+						<span class="text_plain_blue">Business inquries:</span><br>
 						<a href="mailto:OmriG.N7@gmail.com">arnold.s@sky.net</a>
 					</p>
 							
@@ -116,39 +122,38 @@
 				</div>
 			</div>
 						
-			<div class="showcase_container">
+			<div class="showcase_container center_block">
 			
-				<div class="showcase_description center">
-					<div class="medium_container mediumsmall_width">
+				<div class="padding_wrapper center large_width showcase_description">
+					<div class="medium_container medium_width showcae_text">
 						<h4 class="no_margin text_plain_blue">Our Logos<br></h4>
 						<p class="medium_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in aliquet erat. Donec elementum, dui quis rutrum pharetra, tortor sapien scelerisque tellus, id varius nisl diam non mauris. Sed laoreet sem vel lorem laoreet ullamcorper. Aliquam efficitur rhoncus lorem, non auctor turpis.</p>
 					</div>
-					<div class="small_button right" onClick="GoAwayMessage()">DOWNLOAD LOGO PACK (.ZIP)</div>
+					<div class="small_button center" onClick="GoAwayMessage()">DOWNLOAD LOGO PACK (.ZIP)</div>
 				</div>
 							
-				<div class="showcase_content center_block">
+				<div class="center_block showcase_content">
 					<div class="center" id="presskit_showcase_logos_content_container">
-						<img src="/Example-Website/res/imgs/presskit_logo1.png" class="showcase_image" id="presskit_showcase_pic_0"><br>
-						<img src="/Example-Website/res/imgs/presskit_logo0.png" class="showcase_image" id="presskit_showcase_pic_1"><br>
-						<img src="/Example-Website/res/imgs/presskit_logo2.png" class="showcase_image" id="presskit_showcase_pic_2"><br>
+						<img src="/Example-Website/res/imgs/presskit_logo1.png" class="showcase_image center" id="presskit_showcase_pic_0">
+						<img src="/Example-Website/res/imgs/presskit_logo0.png" class="showcase_image center" id="presskit_showcase_pic_1">
+						<img src="/Example-Website/res/imgs/presskit_logo2.png" class="showcase_image center" id="presskit_showcase_pic_2">
 					</div>
 				</div>
 			
 			</div>
-						
-						
-			<div class="showcase_container">	
 			
-				<div class="showcase_description center">
-					<div class="medium_container mediumsmall_width">
+			<div class="showcase_container center_block">
+			
+				<div class="padding_wrapper center large_width showcase_description">
+					<div class="medium_container medium_width showcae_text">
 						<h4 class="no_margin text_plain_blue">Our Color Pallette<br></h4>
 						<p class="medium_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in aliquet erat. Donec elementum, dui quis rutrum pharetra, tortor sapien scelerisque tellus, id varius nisl diam non mauris. Sed laoreet sem vel lorem laoreet ullamcorper. Aliquam efficitur rhoncus lorem, non auctor turpis.</p>
 					</div>
 					
-					<div class="small_button right" onClick="GoAwayMessage()">DOWNLOAD COLPAL (.ASE)</div>
+					<div class="small_button center" onClick="GoAwayMessage()">DOWNLOAD COLPAL (.ASE)</div>
 				</div>
 						
-				<div class="showcase_content center">
+				<div class="center showcase_content">
 					<div class="color_container" style="background:#ED4638;">
 						<div class="boxed_title_small">#ED4638</div>
 					</div>

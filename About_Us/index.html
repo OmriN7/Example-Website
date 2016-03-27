@@ -8,7 +8,11 @@
 		<link type="text/css" rel="stylesheet" href="/Example-Website/res/css/typography.css"/>
 		<link type="text/css" rel="stylesheet" href="/Example-Website/res/css/buttons.css"/>
 		
-		<link type="text/css" rel="stylesheet" href="/Example-Website/res/css/about_us.css"/>
+		<link rel="stylesheet" href="/Example-Website/res/css/components/header.css"/>
+		
+		<link type="text/css" rel="stylesheet" href="/Example-Website/res/css/pages/about_us.css"/>
+		
+		<link type="text/css" rel="stylesheet" href="/Example-Website/res/css/responsive_design.css"/>
 		
 		<!-- JAVASCRIPT LIBRARIES-->
 		<script  type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -18,6 +22,9 @@
 		<script  type="text/javascript" src="/Example-Website/res/js/smooth_scrolling.js"></script>
 		<script  type="text/javascript" src="/Example-Website/res/js/top_page_anchor_fade.js"></script>
 		<script  type="text/javascript" src="/Example-Website/res/js/go_away_message.js"></script>
+		
+		<!-- MOBILE VIEWPORT -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<title>About Us</title>
 		
@@ -39,22 +46,21 @@
 		
 		
 		<!-- PAGE HEADER -->
-		<div class="page_header" id="about_us">
-			<div class="page_header_header">ABOUT US</div>
+		<div class="page_header center" id="about_us">
+			<h1 class="page_header_header center_block">ABOUT US</h1>
 		</div>
 		
 		
 		<!-- PAGE BODY -->
 		<div class="page_body center_block">
-			<div class="large_width center_stack">
+		
+		<div class="padding_wrapper">
 			<h2 class="text_plain_blue">We're a great team.</h2>
-			
 			<h5>
-				Composed of the best people that have ever existed. We take long walks on the beach and stuff.<br>
+				Composed of the best people that exist. We take long walks on the beach and stuff.<br>
 				During actual work time we program stuff, design stuff and build stuff. We all love computers.<br>
-				I literally have no idea who'se a part of this team but I can assure you, it's a pretty cool one. <br>
 			</h5>
-			</div>
+		</div>
 			
 			<div class="c2_wrapper">
 			<div class="showcase_content center">
@@ -63,13 +69,13 @@
 				</div>
 				<div class="c2_segment">
 					<div class="small_wdith c2_text_container_right">
-						<div class="medium_container">
+						<div class="vertical_margin">
 							<h4 class="no_margin text_plain_blue"> Lorem Ipsum </h4>
 							<p class="medium_description">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla efficitur orci, quis viverra massa aliquet sit amet. sectetur. 
 							</p>
 						</div>
-						<div class="medium_container">
+						<div class="vertical_margin">
 							<h4 class="no_margin text_plain_blue"> Lorem Ipsum </h4>
 							<p class="medium_description">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla efficitur orci, quis viverra massa aliquet sit amet. sectetur. 
@@ -84,13 +90,13 @@
 			<div class="showcase_content center ">
 				<div class="c2_segment">
 					<div class="small_wdith c2_text_container_left">
-						<div class="medium_container">
+						<div class="vertical_margin">
 							<h4 class="no_margin text_plain_blue"> Lorem Ipsum </h4>
 							<p class="medium_description">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla efficitur orci, quis viverra massa aliquet sit amet. sectetur. 
 							</p>
 						</div>
-						<div class="medium_container">
+						<div class="vertical_margin">
 							<h4 class="no_margin text_plain_blue"> Lorem Ipsum </h4>
 							<p class="medium_description">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla efficitur orci, quis viverra massa aliquet sit amet. sectetur. 
@@ -106,39 +112,57 @@
 			</div>
 			</div>
 			
-			<div class="center_stack large_width" id="partners_container">
+			<div class="center_block large_width" id="partners_container">
 				<h2 class="text_plain_blue">Our Partners</h2>
 				
-				<div class="c3_wrapper">
+				<div class="c3_wrapper padding_wrapper">
+				
+				<div class="c3_segment">
+           			<a href="https://www.bungie.net/">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Bungie_Logo_-_Official.svg/2000px-Bungie_Logo_-_Official.svg.png" class="c_image partners_image"/>
+					</a>
+				</div>
+					
 					<div class="c3_segment">
-						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Bungie_Logo_-_Official.svg/2000px-Bungie_Logo_-_Official.svg.png" class="c_image"/>
+						<a href="http://www.valvesoftware.com/">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Valve_logo.svg/2000px-Valve_logo.svg.png" class="c_image partners_image"/>
+						</a>
 					</div>
+				
+					
 					<div class="c3_segment">
-						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Valve_logo.svg/2000px-Valve_logo.svg.png" class="c_image"/>
+						<a href="http://atlus.com/">
+							<img src="http://www.atlus.co.jp/image/2014/03/logo.png" class="c_image partners_image"/>
+						</a>
 					</div>
-					<div class="c3_segment">
-						<img src="http://www.atlus.co.jp/image/2014/03/logo.png" class="c_image"/>
-					</div>
+					
 				</div>
 			</div>
 			
-			<div class="center_stack mediumlarge_width" id="founders_container">
+			<div class="center_block mediumlarge_width" id="founders_container">
 				
 				<h2 class="text_plain_blue">Founders</h2>
 				
-				<div class="c3_wrapper">
-           			<div class="c3_segment">
-						<img src="/Example-Website/res/imgs/slash_profpic.png" class="c_image"/>
+				<div class="c3_wrapper padding_wrapper">
+					<div class="c3_segment">
+						
+						<a href="https://en.wikipedia.org/wiki/Slash_%28musician%29">
+							<img src="/Example-Website/res/imgs/slash_profpic.png" class="c_image"/>
+						</a>
 						<div class="boxed_title_small lightgray_background">Slash</div>
 						<div class="boxed_title_small">CEO</div>
 					</div>
 					<div class="c3_segment">
-						<img src="/Example-Website/res/imgs/johnlennon_profpic.png" class="c_image"/>
+						<a href="https://en.wikipedia.org/wiki/John_Lennon">
+							<img src="/Example-Website/res/imgs/johnlennon_profpic.png" class="c_image"/>
+						</a>
 						<div class="boxed_title_small  lightgray_background">John Lennon</div>
 						<div class="boxed_title_small">CTO</div>
 					</div>
 					<div class="c3_segment">
-						<img src="/Example-Website/res/imgs/mickjagger_profpic.png" class="c_image"/>
+						<a href="https://en.wikipedia.org/wiki/Mick_Jagger">
+							<img src="/Example-Website/res/imgs/mickjagger_profpic.png" class="c_image"/>
+						</a>
 						<div class="boxed_title_small lightgray_background">Mick Jagger</div>
 						<div class="boxed_title_small">Intern</div>
 					</div>
