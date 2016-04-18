@@ -1,13 +1,14 @@
 # Omrii's Example-Website
 Hello! This is some of my sample code for an example website.
 
-Here are some things I need to do: 
+gh-pages branch - distribution
+master branch - source
 
-- Create dist and src branch
-- Move all of the js files into one main js file.
+There still are a few things that I want to add and a few fixes that need to be done, so here's a list of all of those things:
 
-// After all the crap above is finihsed move on to doing these things:
-- Ensure that everything works well on my iPhone :)
-
-- The header on mobile's weird
-- Make sure that the parralax script doesn't run on mobile
+- Ensure that only concatnated compiled files are in dist.
+- Add a footer
+- Switch to using awesomefont in the press-kit page
+- Fix the padding on the 'About Us' paragraph areas
+- Ensure every page works in xs (less than 768px) views.
+- Add mobile support !
