@@ -1,0 +1,170 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* <hx> TAG DEFINITONS 
+///////////////////////////////////*/
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+{
+	font-weight: normal;
+	margin: 10px;
+}
+
+h1, .h1
+{
+	font-size: 72px;
+}
+
+h2, .h2
+{
+	font-size: 48px;
+}
+
+h3, .h3
+{
+	font-size: 36px;
+}
+
+h4, .h4
+{
+	font-size: 32px;
+}
+
+h5, .h5
+{
+	font-size: 28px;
+	letter-spacing: 1px;
+	line-height: 30px;
+}
+
+h6, .h6
+{
+	font-size: 22px;
+}
+
+
+/* <p> TAG DEFINITONS 
+///////////////////////////////////*/
+p, .p
+{
+	font-size: 15px; 
+	line-height: 1.3;
+
+}
+
+/* Overwriting some dumb Bootstrap crap */
+dt
+{
+	font-weight: normal;
+}
+
+address
+{
+	margin: 0;
+}
+
+ul
+{
+	padding: 0;
+	list-style-type:none;
+}
+
+/* Text color modifiers */
+/*///////////////////////////////////*/
+.text-flavor-primary 	{ color: $color-flavor-primary; }
+.text-flavor-secondary 	{ color: $color-flavor-secondary; }
+
+
+
+.medium_container
+{
+	padding-top: 10%;
+	
+	&:first-child
+	{
+		padding-top: 0;
+	}
+}
+
+ 
+.medium_description
+{
+	font-family: OpenSans;
+	margin: 5px 0;
+}
+
+.superlarge_width
+{
+	max-width: 1250px;
+}
+
+.large_width
+{
+	max-width: 1000px;
+}
+
+.mediumlarge_width
+{
+	max-width: 800px;
+}
+
+.medium_width
+{
+	max-width: 700px;
+}
+
+.mediumsmall_width
+{
+	max-width: 550px;
+}
+
+.small_wdith
+{
+	max-width: 450px;
+}
+
+.medium_height
+{
+	max-height: 350px;
+}
+
+
+
+
+
+
+
+.maxwidth-superlarge
+{
+	max-width: 1280px;
+}
+
+.maxwidth-large
+{
+	max-width: 1000px;
+}
+
+.maxwidth-mediumlarge
+{
+	max-width: 880px;
+}
+	
+.no_margin
+{
+	margin: 0;
+}
+
+.no_padding
+{
+	padding: 0;
+}
+
+.vertical_margin
+{
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+
+				

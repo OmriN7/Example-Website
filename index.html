@@ -1,139 +1,178 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!-- STYLE SHEETS -->
-		<link type="text/css" rel="stylesheet" href="/Example-Website/res/css/style.css"/>
-		<link type="text/css" rel="stylesheet" href="/Example-Website/res/css/fonts.css"/>
-		<link type="text/css" rel="stylesheet" href="/Example-Website/res/css/layout.css"/>
-		<link type="text/css" rel="stylesheet" href="/Example-Website/res/css/typography.css"/>
-		<link type="text/css" rel="stylesheet" href="/Example-Website/res/css/buttons.css"/>
+		<!-- TO DO
+		-----------------------------------------------------------
 		
-		<link rel="stylesheet" href="/Example-Website/res/css/components/header.css"/>
+		- Scrap inline css
+		- Add a footer
 		
-		<link type="text/css" rel="stylesheet" href="/Example-Website/res/css/pages/product_page.css"/>
+		- Switch awesomefont in press-kit page
 		
-		<link type="text/css" rel="stylesheet" href="/Example-Website/res/css/responsive_design.css"/>
+		- Ensure every page works in xs (less than 768px) views.
 		
+		- Add mobile support!
+		-->
 		
-		<!-- JAVASCRIPT LIBRARIES-->
-		<script  type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-		<script  type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<!-- META TAGS AND PAGE INFO
+		--------------------------------------------------->
 		
-		<!-- JAVASCRIPT SCRIPTS -->
-		<script  type="text/javascript" src="/Example-Website/res/js/smooth_scrolling.js"></script>
-		<script  type="text/javascript" src="/Example-Website/res/js/top_page_anchor_fade.js"></script>
-		<script  type="text/javascript" src="/Example-Website/res/js/go_away_message.js"></script>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Omri Gideoni">
+		<meta name="description" content="Hi! I'm Omri Gideoni and I love creating things. This is my example website.">
+		<meta name="keywords" content="Omri Gideoni,Omri,Gideoni">
 		
-		
-		<!-- MOBILE VIEWPORT -->
+		<!-- VIEWPORT -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
-		
 		<title>Product Page</title>
+		
+		<link rel="shortcut icon" href="/res/imgs/icon.gif">
+		<link rel="icon" href="/res/imgs/icon.gif" type="image/gif">
+		
+		
+		
+		
+		<!-- LIBRARIES -->
+		<!---------------------------------------------->
+		
+		<!-- BOOTSTRAP CSS-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	
+		<!-- JQUERY JS -->
+		<script  type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		
+		<!-- AWESOMEFONT CSS-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+		<!-- STYLE SHEETS -->
+		<!---------------------------------------------->
+		<link type="text/css" rel="stylesheet" href="/Example-Website/res/css/style.css"/>
+		
 		
 		<!--
 		<link rel="shortcut icon" href="icon.gif">
 		-->
 	</head>
 		
-	<body ng-app="">
-	
+	<body class="text-center">
+		<!-- To top of page anchor button -->
+		<a name="top"></a> 
+		<a href="#top" class="topPageAnchorButton">&#9650;</a>		
+		
+		
+		
+		<!-- NAVBAR / WEBSITE HEADER -->
+		<nav class="navbar">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="/Example-Website">Some Company</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li><a href="/Example-Website">Product</a></li>
+					<li><a href="/Example-Website/press_kit">Press Kit</a></li>
+					<li><a href="/Example-Website/about_us">About Us</a></li>
+					<li><a href="#">Resume Website</a></li>
+				</ul>
+			</div>
+		</nav>
 
-		<!-- TOP PAGE ANCHOR -->
-		<a name="top" id="top"></a> 
-		<div class="topPageAnchorButton"><a href="#top" rel="" id="top_page_anchor">&#9650;</a></div>		
-		
-		
-		<!-- WEBSITE HEADER -->
-		<div ng-include="'/Example-Website/res/components/header.html'"></div>
-		
-		
-		<!-- PAGE HEADER -->
-		<div class="center page_header" id="product_page">
-			<h1 class="page_header_header center_block">PRODUCT</h1>
-		</div>
-		
-		<div id="product_page">
+
+		<!-- HERO / PAGE HEADER -->
+		<div class="hero container hero--bg_mountains">
+			<h1 class="hero__header center-block text-center text-uppercase">PRODUCT</h1>
 		</div>
 		
 		<!-- PAGE BODY -->
-		<div class="page_body center_block">
-			<div class="padding_wrapper">
-				<h2>
-					This page was <span class="text_plain_blue">created</span> by Omri Gideoni.
-				</h2>
+		<div class="page-container maxwidth-superlarge center-block">
+			<div class="row center-block maxwidth-mediumlarge">
+				<h3>
+					This page was <span class="text-flavor-primary">created</span> by Omri Gideoni.
+				</h3>
 				
-				<h5>
-					He is an <span class="text_plain_blue">upcoming</span> front-end web developer that you should absolutely totally hire. <br>
-					This is another sentence make this paragraph looks more <span class="text_plain_blue">detailed</span> and <span class="text_plain_blue">descriptive</span>. <br>
-					This page layout would be ideal to explain an <span class="text_plain_blue">idea</span> for a some sort of <span class="text_plain_blue">modern</span> product.
-				</h5>
+				<p class="h6">
+					He is an <span class="text-flavor-primary">upcoming</span> front-end web developer that you should absolutely totally hire.
+					This is another sentence make this paragraph looks more <span class="text-flavor-primary">detailed</span> and <span class="text-flavor-primary">descriptive</span>.
+					This page layout would be ideal to explain an <span class="text-flavor-primary">idea</span> for a some sort of <span class="text-flavor-primary">modern</span> product.
+				</p>
 			</div>
-					
-			<div class="padding_wrapper" id="productpage_featured_pic0">
-				<div>
-					<img src="/Example-Website/res/imgs/productpage_graphic_0.png" class="c_image mediumsmall_width">
-				</div>
-
+			
+			<div class="row">
+				<img class="img-iw" src="/Example-Website/res/imgs/productpage_graphic_0.png" alt="Some minimalistic slinky image" title="This kinda looks like a slinky... Right?">
 				<p>
 					This is some subtext explaining the interesting visual above me.
 				</p>
 			</div>
 			
-			<div class="padding_wrapper c3_wrapper superlarge_width c3_wrapper_foldable">
-				<div class="c3_segment c3_segment_foldable">
-					<img src="/Example-Website/res/imgs/productpage_technology.png"/>
-					<h3 class="c3_header text_plain_blue">Music</h3>
-					<p class="c3_desc">When I work, I occasionaly like listening to music from all types of genres. From Blues, to Glitch Hop, to JRock, I like many different types of music.</p>
+			
+			
+			<div class="row center-block text-center">
+				<div class="col-sm-4">
+					<img src="/Example-Website/res/imgs/productpage_technology.png" alt="Headphones" title="Music">
+					<h4 class=" text-flavor-primary col-4__header">Music</h4>
+					<p>
+						When I work, I occasionaly like listening to music from all types of genres. From Blues, to Glitch Hop, to JRock, I like many different types of music.
+					</p>
 				</div>
-				<div class="c3_segment c3_segment_foldable">
-					<img src="/Example-Website/res/imgs/productpage_computer.png"/>
-					<h3 class="c3_header text_plain_blue">Computers</h3>
-					<p class="c3_desc">I love computers. Technology is an amazing thing that has a lot of things for me to learn, which I'm always eager to know about and understand.</p>
+				
+				<div class="col-sm-4">
+					<img src="/Example-Website/res/imgs/productpage_computer.png" alt="Laptop" title="Computers">
+					<h4 class="text-flavor-primary col-4__header">Computers</h4>
+					<p>I love computers. Technology is an amazing thing that has a lot of things for me to learn, which I'm always eager to know about and understand.</p>
 				</div>
-				<div class="c3_segment c3_segment_foldable">
-					<img src="/Example-Website/res/imgs/productpage_cup.png"/>
-					<h3 class="c3_header text_plain_blue">Coffee</h3>
-					<p class="c3_desc">While making this template, I drank a lot of coffee! so I decided to put coffee here. I like my coffee light with lots of cream. Kind of wimpy, but I don't care.</p>
+				
+				<div class="col-sm-4">
+					<img src="/Example-Website/res/imgs/productpage_cup.png" alt="Coffee Mug" title="Coffee">
+					<h4 class="text-flavor-primary col-4__header">Coffee</h4>
+					<p>While making this template, I drank a lot of coffee! so I decided to put coffee here. I like my coffee light with lots of cream. Kind of wimpy, but I don't care.</p>
 				</div>
 			</div>
 			
-			<div class="c2_wrapper center large_width">
-				<div class="c2_segment">
-					<div class="small_wdith c2_text_container_right">
-						<div class="image_showcase_header">
-							<h3 class="no_margin">Here is another</h3>
-							<h3 class="no_margin text_plain_blue">Cool Graphic</h3>
-						</div>
+			
+			
+			<!-- image_feature div -->
+			<div class="row center-block text-left maxwidth-large">
+					
+				<div class="col-sm-6 col-sm-push-6">
+					<div class="image_feature__header visible-xs">
+						<h4 class="no_margin text-center">Here is another</h4>
+						<h4 class="no_margin text-center text-flavor-primary">Cool Graphic</h4>
+					</div>
+					<img src="/Example-Website/res/imgs/productpage_graphic_1.png" class="center-block" alt="Web of data thing" title="Some neato minimalistic picture">
+				</div>
+					
+				<div class="col-sm-6 col-sm-pull-6">
+					<div class="image_feature__header hidden-xs">
+						<h4 class="no_margin">Here is another</h4>
+						<h4 class="no_margin text-flavor-primary">Cool Graphic</h4>
+					</div>
 						
-						<div class="image_showcase_desc_section">
-							<span class="text_plain_blue">It looks like a web of data.</span>
-							<p>Like a bunch of crucial data points create a very cool looking system. I like the way this visual looks a lot.</p>
-						</div>
-									
-						<div class="image_showcase_desc_section">
-							<span class="text_plain_blue">It's very minimalistic.</span>
-							<p>I love the fact that it's black and white, and that it's shape isn't super complex. It looks very intriguing, but it isn't hard on the eyes, which is good.</p>
-						</div>		
-
+				
+					<div class="image_feature__desc-container">
+						<p class="text-flavor-primary image_feature__desc-header">It looks like a web of data.</p>
+						<p>Like a bunch of crucial data points create a very cool looking system. I like the way this visual looks a lot.</p>
+					</div>
 						
-						<div class="image_showcase_desc_section">
-							<span class="text_plain_blue">It's super duper cool!</span>
-							<p>This visual gives off a very futuristic look. It looks very hip and it gives off a great vibe. (note: hip is not a very hip word)</p>
-						</div>
+					<div class="image_feature__desc-container">
+						<p class="text-flavor-primary image_feature__desc-header">It's very minimalistic.</p>
+						<p>I love the fact that it's black and white, and that it's shape isn't super complex. It looks very intriguing, but it isn't hard on the eyes, which is good.</p>
+					</div>		
+						
+					<div class="image_feature__desc-container">
+						<p class="text-flavor-primary image_feature__desc-header">It's super duper cool!</p>
+						<p>This visual gives off a very futuristic look. It looks very hip and it gives off a great vibe. (note: hip is not a very hip word)</p>
 					</div>
 				</div>
-				<div class="c2_segment">
-					<img src="/Example-Website/res/imgs/productpage_graphic_1.png" class="c_image">
-				</div>
 			</div>
 			
-			
-			<div class="large_button_container" onClick="GoAwayMessage()">
-				<p class="large_button center_block">GET STARTED</p>
-			</div>
-
-
+			<!-- btn-ogew-lg -->
+			<button type="button" class="btn btn-ogew-lg text-uppercase" onClick="GoAwayMessage()">Get started</button>
 		</div>
+		
+		<!-- JAVASCRIPT SCRIPTS -->
+		<script  src="/Example-Website/res/js/app.js"></script>
+		
 	</body>
 </html>

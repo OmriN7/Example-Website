@@ -1,11 +1,5 @@
-#product_page.page_header 
+.hero-bg-mountains
 {
 	background-image: url('/Example-Website/res/imgs/productpage_header_bg.jpg');
 	background-size: 1920px 612px;
-}
-
-#productpage_featured_pic0
-{
-	padding-top: 75px;
-	padding-bottom: 35px;
 }

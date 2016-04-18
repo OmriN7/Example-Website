@@ -1,0 +1,79 @@
+/*
+Buttons featured inside this style sheet
+- topPageAnchorButton
+- btn-ogew-lg
+- btn-ogew-md
+
+*/
+
+/* ANCHOR BUTTON */
+/* /////////////////////////////////////////////////// */
+.topPageAnchorButton
+{
+	display: none;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+	font-size: 32px; 
+	margin-right: 5px;
+	cursor: pointer; 	
+}
+
+/*Button Large
+//////////////////////////////////////*/
+.btn-ogew-lg
+{
+	font-family: Young;
+	font-size: 42px;
+	border: 2px solid #0090D0;
+	border-radius: 50px;
+	cursor: pointer;
+	color: #0090D0;
+	min-width: 330px;
+	line-height: 48px;
+	background: transparent;
+	
+	&:hover
+	{
+		color: white;
+		background: $color-flavor-primary;
+		border: 2px solid transparent;
+	}
+}
+
+@media (min-width:768px) 
+{
+	.btn-ogew-lg
+	{
+		font-size: 48px;
+		min-width: 420px;
+	}
+}
+
+/*Button Medium
+//////////////////////////////////////*/
+.btn-ogew-md
+{
+	font-size:16px;
+	
+	cursor: pointer;
+	border-radius: 25px;
+	background: $color-flavor-primary;
+	color: $color_white;
+	
+	max-width: 310px;
+	min-width: 275px;
+	width: 100%;
+	
+	-webkit-transition:  0.2s; /* Safari */
+	transition:  0.2s;	
+	
+	margin: 15px 0;
+	
+	&:hover
+	{
+		color: $color_white;
+		background: $color-flavor-primary-dark;
+	}
+}
