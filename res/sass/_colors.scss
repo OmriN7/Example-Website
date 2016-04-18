@@ -1,0 +1,33 @@
+//Basic Colors
+$color-black: #000;
+$color-white: #fff;
+
+
+//Unique Colors
+$color-flavor-primary: #0090D0;
+$color-flavor-secondary: #66D9EF;
+$color-flavor-tertiary: #222;
+
+
+//Darker variations of the unique colors
+$color-flavor-primary-dark: darken(#0090D0,10%);
+
+
+//Social Media colors
+$color-twitter: #5AB6FC;
+$color-tumblr: #35455C;
+$color-facebook: #111;
+$color-linkedin: #0069B2;
+$color-steam: #0B0E0F;
+
+$colors-google:
+(
+	primary: #ED4638, //Red
+	secondary: #FBBC05, //Yellow
+	tertiary: #34A853, //Green
+	quaternary: #4285F4, //Blue
+	quinary: #EA4BB0 //Purple (not really an official google color but I added an extra one for the hell of it)
+);
+
+
+

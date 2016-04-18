@@ -1,0 +1,57 @@
+.navbar
+{
+	margin-bottom: -3px;
+}
+
+.nav > li > a
+{
+	text-transform: uppercase;
+	color: #2293D6;
+	font-size: 13px;
+	font-family: OpenSans;
+	border-bottom: 0px solid #66D9EF;
+	-webkit-transition:  0.15s; /* Safari */
+	transition:  0.15s;
+}
+	
+.navbar-brand
+{
+	color: black;
+	text-transform: uppercase;
+	float: unset;
+	line-height: 5rem;
+}
+
+.navbar-nav
+{
+	margin-top: 0;
+}
+	
+	@media (min-width:768px) 
+	{
+		.navbar-header
+		{
+			float: left;
+		}
+		
+		.navbar-nav 
+		{
+			float: right;
+		}
+		
+		.nav > li > a
+		{
+			width: 125px;
+			height: 50px;
+			padding: 0;
+			line-height: 5rem;
+		}
+		
+		.nav > li > a:focus,
+		.nav > li > a:hover
+		{
+			background: transparent;
+			border-bottom: 8px solid #66D9EF;
+			line-height: 4rem;
+		}
+	}

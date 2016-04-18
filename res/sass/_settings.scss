@@ -1,0 +1,83 @@
+a
+{
+	text-decoration: none;
+	-webkit-transition:  0.25s; /* Safari */
+	transition:  0.25s;
+	
+	&:link,
+	&:visited,
+	&:hover,
+	&:active
+	{
+		color: $color-flavor-tertiary;
+		outline: 0;
+		text-decoration: none;
+	}
+	
+	&:hover
+	{
+		color: $color-black;
+		-webkit-transition:  0.35s; /* Safari */
+		transition:  0.35s;
+	}
+	
+	&:active
+	{
+		color: $color-flavor-secondary;
+		-webkit-transition:  0.05s; /* Safari */
+		transition:  0.05s;
+	}
+}
+
+::selection
+{
+	color: $color-white;
+    background: $color-flavor-secondary;
+}
+
+/* Firefox */
+::-moz-selection 
+{
+	color: $color-white;
+    background: $color-flavor-secondary;
+}
+
+img
+{
+	max-width: 100%;
+}
+
+.half-width
+{
+	max-width: 50%;
+}
+		
+.third-width
+{
+	max-width: 33.3333333%;
+}
+		
+.sixth-width
+{
+	max-width: 16.6666666%;
+}
+		
+.image_icon
+{
+	height: 16px;
+	width: 16px;
+	margin-bottom: -2px;
+}
+
+@media only screen and (max-width: 860px) 
+{
+	.showcase_inner_container
+	{
+		display: block;
+	}
+	
+	.bodycontainer
+	{
+		display: block;
+	}
+}
