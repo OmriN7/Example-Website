@@ -7,6 +7,7 @@ Hello! This is some of my sample code for an example website.
 
 There still are a few things that I want to add and a few fixes that need to be done, so here's a list of all of those things:
 
+- Top page anchor buttons seems to fade in and out kind of akwardly.
 - Ensure that only concatnated compiled files are in dist.
 - Add a footer
 - Switch to using awesomefont in the press-kit page
