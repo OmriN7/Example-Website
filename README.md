@@ -1,9 +1,9 @@
 # Omrii's Example-Website
 Hello! This is some of my sample code for an example website.
 
-gh-pages branch - distribution
+*gh-pages branch* - distribution
 
-master branch - source
+*master branch* - source
 
 There still are a few things that I want to add and a few fixes that need to be done, so here's a list of all of those things:
 
