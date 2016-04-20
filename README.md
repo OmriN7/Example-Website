@@ -9,6 +9,7 @@ There still are a few things that I want to add and a few bugs that need to be f
 
 Here's the list of all of those things:
 
+- Scrap all "type" attributes for link tags of stylesheets and scripts.
 - Top page anchor buttons seems to fade in and out kind of akwardly.
 - Ensure that only concatnated compiled files are in dist.
 - Add a footer
